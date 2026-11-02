@@ -4,7 +4,7 @@
 #   Job "Testes automatizados":
 #     1. testes unitarios ............. JUnit 5 + Mockito + MockMvc
 #     2. cenarios BDD e testes de API . Cucumber (Gherkin) + REST Assured + JSON Schema,
-#                                       contra a API real e um MongoDB 8.0 real
+#                                       contra a API real e um MongoDB 7.0 real
 #                                       (container descartavel via Testcontainers)
 #     3. resumo na pagina da execucao e relatorios publicados como artefatos
 #
@@ -38,14 +38,15 @@ jobs:
 
   testes:
     name: Testes automatizados
-    # Ubuntu 24.04 fixo: o MongoDB 8.x nao inicia em kernels Linux 6.19+ (bug do
-    # TCMalloc com o rseq do kernel - jira.mongodb.org/browse/SERVER-121912), e o
-    # "ubuntu-latest" passou a ser Ubuntu 26 em 19/10/2026. Assim os testes seguem
-    # usando o mesmo MongoDB 8.0 do ambiente real.
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+
+      - name: Ambiente do runner (kernel e Docker)
+        run: |
+          echo "Kernel: $(uname -r)"
+          docker version --format 'Docker Engine: {{.Server.Version}}'
 
       - name: Java ${{ env.JAVA_VERSION }} (Temurin) com cache do Maven
         uses: actions/setup-java@v6
@@ -57,7 +58,7 @@ jobs:
       - name: 1. Testes unitarios (JUnit 5 + Mockito)
         run: ./mvnw -B -ntp test
 
-      # Sobe a API completa em porta aleatoria e um MongoDB 8.0 em container;
+      # Sobe a API completa em porta aleatoria e um MongoDB 7.0 em container;
       # os cenarios Gherkin e os testes de API fazem chamadas HTTP reais.
       - name: 2. Cenarios BDD (Cucumber) e testes de API (REST Assured + JSON Schema)
         run: ./mvnw -B -ntp verify -DskipUnitTests=true
@@ -88,7 +89,7 @@ jobs:
   imagem:
     name: Build da imagem Docker
     needs: testes
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7

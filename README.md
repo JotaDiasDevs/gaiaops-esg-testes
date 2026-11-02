@@ -130,7 +130,7 @@ Os 17 contratos ficam em [`src/test/resources/schemas/`](src/test/resources/sche
 ./mvnw verify
 ```
 
-O Testcontainers sobe um `mongo:8.0` descartável, roda tudo e remove o container no final.
+O Testcontainers sobe um `mongo:7.0` descartável, roda tudo e remove o container no final.
 
 ### Opção B: com um MongoDB local
 
@@ -185,12 +185,12 @@ O workflow [`.github/workflows/testes.yml`](.github/workflows/testes.yml) roda e
 | Etapa | O que faz |
 |---|---|
 | 1. Testes unitários | `./mvnw test` |
-| 2. Cenários BDD e testes de API | `./mvnw verify -DskipUnitTests=true`: API real + MongoDB 8.0 em container (Testcontainers) |
+| 2. Cenários BDD e testes de API | `./mvnw verify -DskipUnitTests=true`: API real + MongoDB 7.0 em container (Testcontainers) |
 | 3. Resumo da execução | Tabelas com cada cenário, cada classe de API e a cobertura, na página da execução |
 | Artefatos | `relatorio-cucumber` (HTML) e `relatorios-junit-e-cobertura` |
 | Build da imagem Docker | Confirma que o `Dockerfile` continua funcional |
 
-> Os jobs rodam em `ubuntu-24.04`, e não em `ubuntu-latest`. Desde 19/10/2026 o `ubuntu-latest` é o Ubuntu 26, cujo kernel (6.19+) é incompatível com o MongoDB 8.x ([SERVER-121912](https://jira.mongodb.org/browse/SERVER-121912)): o `mongod` se recusa a iniciar. Fixar o runner mantém os testes no mesmo MongoDB 8.0 usado pela aplicação.
+> **Por que MongoDB 7.0 nos containers?** O MongoDB 8.x se recusa a iniciar em kernels Linux 6.19+, que é o caso dos runners atuais do GitHub, tanto do Ubuntu 26 quanto do 24.04 com kernel HWE ([SERVER-121912](https://jira.mongodb.org/browse/SERVER-121912), [SERVER-136848](https://jira.mongodb.org/browse/SERVER-136848), ainda aberta). O 7.0 não tem esse problema e oferece todos os recursos usados pela API. O passo *Ambiente do runner* registra o kernel de cada execução.
 
 ---
 
@@ -231,7 +231,7 @@ A correção foi feita em [`TratadorDeErros`](src/main/java/br/com/fiap/gaiaops/
 
 ## Tecnologias
 
-Java 21 · Spring Boot 3.5 · MongoDB 8.0 · **Cucumber 7 (Gherkin)** · **REST Assured 5** · **JSON Schema Validator** · JUnit 5 (Platform Suite) · Testcontainers · Mockito · JaCoCo · Maven Wrapper · Docker / Docker Compose · GitHub Actions
+Java 21 · Spring Boot 3.5 · MongoDB 7.0 · **Cucumber 7 (Gherkin)** · **REST Assured 5** · **JSON Schema Validator** · JUnit 5 (Platform Suite) · Testcontainers · Mockito · JaCoCo · Maven Wrapper · Docker / Docker Compose · GitHub Actions
 
 ---
 

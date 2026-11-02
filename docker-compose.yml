@@ -2,7 +2,8 @@
 # GaiaOps ESG - orquestracao com Docker Compose
 #
 # Dois servicos:
-#   mongo - MongoDB 8.0, com volume persistente e script de inicializacao
+#   mongo - MongoDB 7.0, com volume persistente e script de inicializacao
+#           (o 8.x nao inicia nos kernels Linux 6.19+ - jira.mongodb.org/browse/SERVER-136848)
 #   api   - a API Spring Boot (imagem construida pelo Dockerfile)
 #
 # O MESMO arquivo serve para todos os ambientes. O que muda entre local,
@@ -17,7 +18,7 @@
 services:
 
   mongo:
-    image: mongo:8.0
+    image: mongo:7.0
     restart: unless-stopped
     environment:
       # Usuario administrador do MongoDB (so para administracao).

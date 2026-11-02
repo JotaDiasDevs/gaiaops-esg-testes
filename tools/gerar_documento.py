@@ -199,7 +199,7 @@ def secao_estrategia(d):
         "            API GaiaOps ESG (Spring Boot, porta aleatória)\n"
         "                              |\n"
         "                              v\n"
-        "      MongoDB real: container mongo:8.0 (Testcontainers)\n"
+        "      MongoDB real: container mongo:7.0 (Testcontainers)\n"
         "                    ou MongoDB local (TEST_MONGODB_URI)",
         "Figura 1 - Cenários BDD e testes de API usam a aplicação completa e um banco real")
     d.bullets([
@@ -369,7 +369,7 @@ def secao_evidencias_local(d):
 def secao_evidencias_ci(d):
     d.h1(SECOES[7])
     d.par("O workflow `Testes automatizados` roda a cada push na branch main e sob demanda. A execução abaixo usa "
-          "um runner Linux do GitHub, com o MongoDB 8.0 em container criado pelo Testcontainers.")
+          "um runner Linux do GitHub, com o MongoDB 7.0 em container criado pelo Testcontainers.")
     for nome, legenda, instrucao in PRINTS_CI:
         d.print_tela(nome, legenda, instrucao)
 
@@ -396,12 +396,14 @@ def secao_desafios(d):
          "Data do cenário lida como texto e convertida com DateTimeFormatter (dd/MM/yyyy)"],
         ["REST Assured lê decimais do JSON como Float, e 83702.0 não \"batia\" com o Double esperado",
          "Configuração global do REST Assured para ler decimais como Double"],
-        ["Primeira execução no GitHub Actions falhou: o runner ubuntu-latest passou a ser Ubuntu 26 (19/10/2026), "
-         "cujo kernel 6.19+ é incompatível com o MongoDB 8.x (bug do TCMalloc, SERVER-121912); o erro real ainda "
-         "aparecia mascarado como \"MongoDBContainer should be started first\"",
-         "Causa encontrada no log do mongod dentro dos relatórios do pipeline. Runner fixado em ubuntu-24.04, mantendo "
-         "o mesmo MongoDB 8.0 de produção, e MongoDeTeste corrigido para guardar o container só depois de iniciado, "
-         "expondo o erro original"],
+        ["Primeira execução no GitHub Actions falhou com \"MongoDBContainer should be started first\", "
+         "mensagem que escondia a causa real",
+         "MongoDeTeste corrigido para guardar o container só depois de iniciado. Nos relatórios do pipeline, o log "
+         "do mongod mostrou a causa: o MongoDB 8.x se recusa a iniciar em kernels Linux 6.19+ (SERVER-121912)"],
+        ["Fixar o runner em ubuntu-24.04 não resolveu: a imagem do GitHub também usa um kernel novo (HWE), e a "
+         "verificação de kernel do MongoDB 8.0 ainda não reconhece os kernels corrigidos do Ubuntu (SERVER-136848, aberta)",
+         "Containers de teste e o docker-compose passaram a usar mongo:7.0, que não tem o problema e oferece todos "
+         "os recursos usados pela API; o pipeline registra o kernel de cada execução"],
         ["Estação de desenvolvimento sem Docker",
          "Modo duplo: Testcontainers no pipeline e MongoDB local via TEST_MONGODB_URI, com trava que exige um banco descartável"],
         ["Resultados que dependem da data de execução (licenças vencidas)",
@@ -417,7 +419,7 @@ def secao_tecnologias(d):
     d.h1(SECOES[9])
     d.tabela(["Camada", "Tecnologias"], [
         ["Aplicação", "Java 21, Spring Boot 3.5 (Web, Validation, Data MongoDB, Actuator), springdoc-openapi"],
-        ["Banco de dados", "MongoDB 8.0"],
+        ["Banco de dados", "MongoDB 7.0 nos containers (Testcontainers e Docker Compose)"],
         ["BDD", "Cucumber 7 (cucumber-java, cucumber-spring, cucumber-junit-platform-engine), Gherkin em português"],
         ["Testes de API", "REST Assured 5, REST Assured JSON Schema Validator (draft-04)"],
         ["Base de testes", "JUnit 5 + JUnit Platform Suite, Spring Boot Test, Testcontainers, Mockito, AssertJ/Hamcrest"],

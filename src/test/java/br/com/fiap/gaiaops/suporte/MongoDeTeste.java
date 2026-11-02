@@ -7,7 +7,7 @@ import com.mongodb.ConnectionString;
 /**
  * Decide qual MongoDB os testes de integracao (BDD e API) usam.
  *
- * - Padrao (GitHub Actions e qualquer maquina com Docker): um container mongo:8.0
+ * - Padrao (GitHub Actions e qualquer maquina com Docker): um container mongo:7.0
  *   descartavel, iniciado UMA vez pelo Testcontainers e compartilhado por todos os
  *   cenarios e testes. Some ao fim da execucao.
  * - Variavel TEST_MONGODB_URI definida: usa esse MongoDB (ex.: o instalado na
@@ -33,7 +33,9 @@ public final class MongoDeTeste {
             // So guarda a referencia depois de subir: se o start falhar, a proxima
             // chamada tenta de novo e o erro original aparece no log (em vez de um
             // "container should be started first" que esconde a causa).
-            MongoDBContainer novo = new MongoDBContainer("mongo:8.0");
+            // MongoDB 7.0: o 8.x se recusa a iniciar nos kernels Linux 6.19+ usados hoje
+            // pelos runners do GitHub (jira.mongodb.org/browse/SERVER-136848).
+            MongoDBContainer novo = new MongoDBContainer("mongo:7.0");
             novo.start();
             container = novo;
         }
