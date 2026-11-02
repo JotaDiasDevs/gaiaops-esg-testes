@@ -215,9 +215,13 @@ Os prints estão em [`docs/prints/`](docs/prints/), e o log completo da execuç�
 ![Visão geral do relatório do Cucumber](docs/prints/local-01-cucumber-visao-geral.png)
 ![Cenários de alertas ambientais](docs/prints/local-03-cucumber-ambiental-alertas.png)
 
-### Execução no GitHub Actions
+### Execução no GitHub Actions (execução #3: 23 cenários, 46 testes de API e 17 unitários aprovados)
 ![Execução do pipeline](docs/prints/ci-01-execucao.png)
-![Resumo da execução](docs/prints/ci-02-resumo.png)
+![Resumo da execução: totais e cenários BDD](docs/prints/ci-02-resumo.png)
+![Resumo da execução: testes de API e unitários](docs/prints/ci-03-resumo-api.png)
+
+Relatório do Cucumber gerado no pipeline (artefato `relatorio-cucumber`):
+![Relatório do Cucumber no CI](docs/prints/ci-04-relatorio-cucumber.png)
 
 ---
 

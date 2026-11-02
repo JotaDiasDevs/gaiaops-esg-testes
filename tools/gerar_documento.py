@@ -47,13 +47,13 @@ SECOES = [
 ]
 
 PRINTS_CI = [
-    ("ci-01-execucao", "Figura - Execução do workflow no GitHub Actions",
+    ("ci-01-execucao", "Figura - Execução #3 do workflow: os dois jobs aprovados (commit 99a5bd2)",
      "Actions > Testes automatizados > execução: os dois jobs verdes (Testes automatizados e Build da imagem Docker)."),
-    ("ci-02-resumo", "Figura - Resumo da execução (Job Summary)",
-     "Página da execução, aba Summary: tabelas de totais, cenários BDD e testes de API."),
-    ("ci-03-passo-bdd", "Figura - Log do passo de cenários BDD e testes de API",
-     "Job Testes automatizados > passo 2 expandido, mostrando os cenários do Cucumber e 'Tests run: 69'."),
-    ("ci-04-relatorio-cucumber", "Figura - Relatório do Cucumber gerado no pipeline",
+    ("ci-02-resumo", "Figura - Resumo da execução: totais por tipo de teste, cobertura e cada cenário BDD",
+     "Página da execução, aba Summary: tabelas de totais e de cenários BDD."),
+    ("ci-03-resumo-api", "Figura - Resumo da execução: testes de API por rota e testes unitários",
+     "Página da execução, aba Summary: tabelas de testes de API e testes unitários."),
+    ("ci-04-relatorio-cucumber", "Figura - Relatório do Cucumber gerado no pipeline: 23/23 cenários aprovados no runner Linux do GitHub",
      "Artefato relatorio-cucumber > cucumber.html aberto no navegador: 100% dos cenários aprovados."),
 ]
 
@@ -368,8 +368,10 @@ def secao_evidencias_local(d):
 
 def secao_evidencias_ci(d):
     d.h1(SECOES[7])
-    d.par("O workflow `Testes automatizados` roda a cada push na branch main e sob demanda. A execução abaixo usa "
-          "um runner Linux do GitHub, com o MongoDB 7.0 em container criado pelo Testcontainers.")
+    d.par("O workflow `Testes automatizados` roda a cada push na branch main e sob demanda. A execução abaixo "
+          "(#3, commit `99a5bd2`) usa um runner Linux do GitHub (kernel 7.0.0-1017-azure), com o MongoDB 7.0 em "
+          "container criado pelo Testcontainers: **23 cenários BDD, 46 testes de API e 17 testes unitários "
+          "aprovados, 0 falhas**, e 97% de cobertura de linhas.")
     for nome, legenda, instrucao in PRINTS_CI:
         d.print_tela(nome, legenda, instrucao)
 
