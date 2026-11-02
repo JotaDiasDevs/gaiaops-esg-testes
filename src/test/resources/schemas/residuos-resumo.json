@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Peso coletado por categoria e destinacao",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [
+      "categoria",
+      "destinacao",
+      "coletas",
+      "peso_kg"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "categoria": {
+        "enum": [
+          "reciclavel",
+          "organico",
+          "rejeito",
+          "eletronico",
+          "saude",
+          "construcao"
+        ]
+      },
+      "destinacao": {
+        "type": "string",
+        "minLength": 3
+      },
+      "coletas": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "peso_kg": {
+        "type": "number",
+        "minimum": 0
+      }
+    }
+  }
+}

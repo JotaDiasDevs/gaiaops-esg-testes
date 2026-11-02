@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Problem Details (RFC 9457) - formato padrao de erro da API",
+  "type": "object",
+  "required": [
+    "type",
+    "title",
+    "status",
+    "detail"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "integer",
+      "minimum": 400,
+      "maximum": 599
+    },
+    "detail": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instance": {
+      "type": "string",
+      "pattern": "^/"
+    }
+  }
+}

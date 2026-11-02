@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Programa social do municipio",
+  "description": "Beneficiarios sao identificados so por protocolo (LGPD): o contrato proibe dados pessoais diretos.",
+  "type": "object",
+  "required": [
+    "_id",
+    "codigo",
+    "nome",
+    "eixo",
+    "ativo",
+    "beneficiarios"
+  ],
+  "properties": {
+    "_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{24}$"
+    },
+    "codigo": {
+      "type": "string",
+      "pattern": "^PRG-[A-Z]{2}-[0-9]{3}$"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 3
+    },
+    "eixo": {
+      "enum": [
+        "assistencia",
+        "educacao",
+        "saude",
+        "trabalho_renda",
+        "acessibilidade",
+        "habitacao"
+      ]
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "beneficiarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "protocolo",
+          "situacao"
+        ],
+        "properties": {
+          "protocolo": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}-[A-Z0-9-]+$"
+          },
+          "situacao": {
+            "type": "string",
+            "minLength": 3
+          },
+          "pcd": {
+            "type": "boolean"
+          }
+        },
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "nome"
+              ]
+            },
+            {
+              "required": [
+                "cpf"
+              ]
+            },
+            {
+              "required": [
+                "rg"
+              ]
+            },
+            {
+              "required": [
+                "email"
+              ]
+            },
+            {
+              "required": [
+                "telefone"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

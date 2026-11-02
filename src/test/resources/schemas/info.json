@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Informacoes da versao implantada (rastreabilidade)",
+  "type": "object",
+  "required": [
+    "app",
+    "build"
+  ],
+  "properties": {
+    "app": {
+      "type": "object",
+      "required": [
+        "nome",
+        "descricao",
+        "versao",
+        "ambiente",
+        "commit"
+      ],
+      "properties": {
+        "nome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "versao": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+"
+        },
+        "ambiente": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "required": [
+        "artifact",
+        "version",
+        "time"
+      ],
+      "properties": {
+        "artifact": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

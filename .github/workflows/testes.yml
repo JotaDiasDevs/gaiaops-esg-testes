@@ -1,0 +1,102 @@
+# =============================================================================
+# GaiaOps ESG - pipeline de testes automatizados (GitHub Actions)
+#
+#   Job "Testes automatizados":
+#     1. testes unitarios ............. JUnit 5 + Mockito + MockMvc
+#     2. cenarios BDD e testes de API . Cucumber (Gherkin) + REST Assured + JSON Schema,
+#                                       contra a API real e um MongoDB 8.0 real
+#                                       (container descartavel via Testcontainers)
+#     3. resumo na pagina da execucao e relatorios publicados como artefatos
+#
+#   Job "Build da imagem Docker": confirma que o Dockerfile continua funcional.
+#
+# Roda em todo push e pull request na main, e sob demanda (Run workflow).
+# =============================================================================
+name: Testes automatizados
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: testes-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  JAVA_VERSION: "21"
+
+jobs:
+
+  testes:
+    name: Testes automatizados
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Java ${{ env.JAVA_VERSION }} (Temurin) com cache do Maven
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: maven
+
+      - name: 1. Testes unitarios (JUnit 5 + Mockito)
+        run: ./mvnw -B -ntp test
+
+      # Sobe a API completa em porta aleatoria e um MongoDB 8.0 em container;
+      # os cenarios Gherkin e os testes de API fazem chamadas HTTP reais.
+      - name: 2. Cenarios BDD (Cucumber) e testes de API (REST Assured + JSON Schema)
+        run: ./mvnw -B -ntp verify -DskipUnitTests=true
+
+      - name: 3. Resumo da execucao
+        if: always()
+        run: python3 .github/scripts/resumo_testes.py
+
+      - name: Publicar relatorio do Cucumber (HTML)
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: relatorio-cucumber
+          path: target/cucumber-reports/
+          retention-days: 30
+
+      - name: Publicar relatorios JUnit e cobertura (JaCoCo)
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: relatorios-junit-e-cobertura
+          path: |
+            target/surefire-reports/
+            target/failsafe-reports/
+            target/site/jacoco/
+          retention-days: 30
+
+  imagem:
+    name: Build da imagem Docker
+    needs: testes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Preparar Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build da imagem (sem publicar)
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: false
+          tags: gaiaops-esg:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

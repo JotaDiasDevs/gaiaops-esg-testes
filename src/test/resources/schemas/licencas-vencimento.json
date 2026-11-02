@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Licencas vencidas ou a vencer",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "_id",
+      "tipo",
+      "numero",
+      "validade",
+      "situacao",
+      "dias_para_vencer",
+      "vencida"
+    ],
+    "properties": {
+      "_id": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{24}$"
+      },
+      "tipo": {
+        "enum": [
+          "licenca"
+        ]
+      },
+      "numero": {
+        "type": "string",
+        "minLength": 3
+      },
+      "validade": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}T"
+      },
+      "situacao": {
+        "type": "string"
+      },
+      "dias_para_vencer": {
+        "type": "integer"
+      },
+      "vencida": {
+        "type": "boolean"
+      }
+    }
+  }
+}

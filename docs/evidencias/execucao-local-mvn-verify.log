@@ -1,0 +1,800 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< br.com.fiap:gaiaops-esg >-----------------------
+[INFO] Building gaiaops-esg 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ gaiaops-esg ---
+[INFO] Deleting C:\FIAP\Testes\gaiaops-esg-testes\target
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ gaiaops-esg ---
+[INFO] argLine set to -javaagent:C:\\Users\\joaov\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.15\\org.jacoco.agent-0.8.15-runtime.jar=destfile=C:\\FIAP\\Testes\\gaiaops-esg-testes\\target\\jacoco.exec
+[INFO] 
+[INFO] --- spring-boot:3.5.16:build-info (default) @ gaiaops-esg ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ gaiaops-esg ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ gaiaops-esg ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 26 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ gaiaops-esg ---
+[INFO] Copying 23 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ gaiaops-esg ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 24 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ gaiaops-esg ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.fiap.gaiaops.equipamento.EquipamentoControllerTest
+15:42:02.194 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.fiap.gaiaops.equipamento.EquipamentoControllerTest]: EquipamentoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:02.525 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.equipamento.EquipamentoControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-02T15:42:03.393-03:00  INFO 11124 --- [gaiaops-esg] [           main] b.c.f.g.e.EquipamentoControllerTest      : Starting EquipamentoControllerTest using Java 21.0.6 with PID 11124 (started by joaov in C:\FIAP\Testes\gaiaops-esg-testes)
+2026-11-02T15:42:03.394-03:00  INFO 11124 --- [gaiaops-esg] [           main] b.c.f.g.e.EquipamentoControllerTest      : No active profile set, falling back to 1 default profile: "default"
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\joaov\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-11-02T15:42:06.504-03:00  INFO 11124 --- [gaiaops-esg] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-11-02T15:42:07.055-03:00  INFO 11124 --- [gaiaops-esg] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-02T15:42:07.056-03:00  INFO 11124 --- [gaiaops-esg] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-02T15:42:07.060-03:00  INFO 11124 --- [gaiaops-esg] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-11-02T15:42:07.116-03:00  INFO 11124 --- [gaiaops-esg] [           main] b.c.f.g.e.EquipamentoControllerTest      : Started EquipamentoControllerTest in 4.47 seconds (process running for 6.314)
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.222 s -- in br.com.fiap.gaiaops.equipamento.EquipamentoControllerTest
+[INFO] Running br.com.fiap.gaiaops.medicao.RegrasDeAlertaTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s -- in br.com.fiap.gaiaops.medicao.RegrasDeAlertaTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ gaiaops-esg ---
+[INFO] Building jar: C:\FIAP\Testes\gaiaops-esg-testes\target\gaiaops-esg.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ gaiaops-esg ---
+[INFO] Replacing main artifact C:\FIAP\Testes\gaiaops-esg-testes\target\gaiaops-esg.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\FIAP\Testes\gaiaops-esg-testes\target\gaiaops-esg.jar.original
+[INFO] 
+[INFO] --- failsafe:3.5.6:integration-test (default) @ gaiaops-esg ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+nov. 02, 2026 3:42:11 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+ADVERTÊNCIA: TestEngine with ID 'junit-platform-suite' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] [cucumber] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead (via @Suite br.com.fiap.gaiaops.bdd.CucumberIT).
+[INFO] Running API /api/conformidade
+15:42:11.956 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.ConformidadeApiIT]: ConformidadeApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:12.259 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.ConformidadeApiIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-02T15:42:13.930-03:00  INFO 6156 --- [gaiaops-esg] [           main] b.c.fiap.gaiaops.api.ConformidadeApiIT   : Starting ConformidadeApiIT using Java 21.0.6 with PID 6156 (started by joaov in C:\FIAP\Testes\gaiaops-esg-testes)
+2026-11-02T15:42:13.932-03:00  INFO 6156 --- [gaiaops-esg] [           main] b.c.fiap.gaiaops.api.ConformidadeApiIT   : No active profile set, falling back to 1 default profile: "default"
+2026-11-02T15:42:16.026-03:00  INFO 6156 --- [gaiaops-esg] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-11-02T15:42:16.107-03:00  INFO 6156 --- [gaiaops-esg] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 0 MongoDB repository interfaces.
+2026-11-02T15:42:17.974-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-11-02T15:42:18.024-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-02T15:42:18.024-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-11-02T15:42:18.227-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-02T15:42:18.229-03:00  INFO 6156 --- [gaiaops-esg] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4257 ms
+2026-11-02T15:42:19.120-03:00  INFO 6156 --- [gaiaops-esg] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6dfd4db2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@60ae0977, com.mongodb.Jep395RecordCodecProvider@33c440bb, com.mongodb.KotlinCodecProvider@641c872d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@630bd6c1], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-11-02T15:42:19.176-03:00  INFO 6156 --- [gaiaops-esg] [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=28, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41967900, minRoundTripTimeNanos=0}
+2026-11-02T15:42:20.018-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-11-02T15:42:21.085-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-02T15:42:21.395-03:00  INFO 6156 --- [gaiaops-esg] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 65084 (http) with context path '/'
+2026-11-02T15:42:21.415-03:00  INFO 6156 --- [gaiaops-esg] [           main] b.c.fiap.gaiaops.api.ConformidadeApiIT   : Started ConformidadeApiIT in 8.149 seconds (process running for 11.465)
+2026-11-02T15:42:21.634-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' ja possui 12 documentos - mantida como esta
+2026-11-02T15:42:21.640-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' ja possui 53 documentos - mantida como esta
+2026-11-02T15:42:21.642-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' ja possui 12 documentos - mantida como esta
+2026-11-02T15:42:21.644-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' ja possui 11 documentos - mantida como esta
+2026-11-02T15:42:21.647-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' ja possui 12 documentos - mantida como esta
+2026-11-02T15:42:21.649-03:00  WARN 6156 --- [gaiaops-esg] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-02T15:42:21.649-03:00  WARN 6156 --- [gaiaops-esg] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\joaov\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-11-02T15:42:23.016-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:23.052-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:23.075-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:23.117-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:23.136-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:24.332-03:00  INFO 6156 --- [gaiaops-esg] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-02T15:42:24.332-03:00  INFO 6156 --- [gaiaops-esg] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-02T15:42:24.334-03:00  INFO 6156 --- [gaiaops-esg] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-02T15:42:26.174-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:26.215-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:26.313-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:26.640-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:26.797-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:27.069-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:27.144-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:27.192-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:27.219-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:27.245-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:27.437-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:27.483-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:27.520-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:27.547-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:27.581-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:27.772-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:27.800-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:27.826-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:27.854-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:27.885-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.31 s -- in API /api/conformidade
+[INFO] Running API /api/equipamentos
+2026-11-02T15:42:27.983-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT]: EquipamentoApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:27.993-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT
+[INFO] Running DELETE /api/equipamentos/{codigo}
+2026-11-02T15:42:27.999-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT$Desativar]: Desativar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:28.011-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT$Desativar
+2026-11-02T15:42:28.064-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:28.080-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:28.093-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:28.124-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:28.136-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:28.286-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:28.321-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:28.333-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:28.362-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:28.375-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 s -- in DELETE /api/equipamentos/{codigo}
+[INFO] Running PUT /api/equipamentos/{codigo}
+2026-11-02T15:42:28.524-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT$Atualizar]: Atualizar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:28.533-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT$Atualizar
+2026-11-02T15:42:28.578-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:28.594-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:28.606-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:28.636-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:28.654-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:28.898-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:28.915-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:28.951-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:28.964-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:29.025-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:29.176-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:29.193-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:29.204-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:29.231-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:29.243-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.838 s -- in PUT /api/equipamentos/{codigo}
+[INFO] Running POST /api/equipamentos
+2026-11-02T15:42:29.362-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT$Cadastrar]: Cadastrar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:29.372-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT$Cadastrar
+2026-11-02T15:42:29.413-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:29.441-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:29.455-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:29.484-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:29.498-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:29.625-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:29.662-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:29.675-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:29.686-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:29.725-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:29.808-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:29.845-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:29.853-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:29.867-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:29.902-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:30.081-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:30.093-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:30.124-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:30.134-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:30.145-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:30.258-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:30.295-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:30.306-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:30.341-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:30.350-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:30.488-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:30.500-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:30.511-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:30.546-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:30.561-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.260 s -- in POST /api/equipamentos
+[INFO] Running GET /api/equipamentos/{codigo}
+2026-11-02T15:42:30.622-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT$Buscar]: Buscar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:30.630-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT$Buscar
+2026-11-02T15:42:30.651-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:30.663-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:30.696-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:30.708-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:30.718-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:30.823-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:30.835-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:30.869-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:30.879-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:30.890-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 s -- in GET /api/equipamentos/{codigo}
+[INFO] Running GET /api/equipamentos
+2026-11-02T15:42:30.997-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.EquipamentoApiIT$Listar]: Listar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:31.006-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.EquipamentoApiIT$Listar
+2026-11-02T15:42:31.026-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:31.062-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:31.074-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:31.107-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:31.118-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:31.267-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:31.293-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:31.305-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:31.315-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:31.349-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:31.404-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:31.415-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:31.442-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:31.453-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:31.478-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.567 s -- in GET /api/equipamentos
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.583 s -- in API /api/equipamentos
+[INFO] Running API /api/indicadores
+2026-11-02T15:42:31.566-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.IndicadorApiIT]: IndicadorApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:31.575-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.IndicadorApiIT
+2026-11-02T15:42:31.611-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:31.621-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:31.632-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:31.642-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:31.654-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:31.882-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:31.895-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:31.926-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:31.936-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:31.947-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 s -- in API /api/indicadores
+[INFO] Running API /api/medicoes
+2026-11-02T15:42:32.206-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.MedicaoApiIT]: MedicaoApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:32.214-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.MedicaoApiIT
+[INFO] Running POST /api/medicoes
+2026-11-02T15:42:32.216-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.MedicaoApiIT$Registrar]: Registrar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:32.222-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.MedicaoApiIT$Registrar
+2026-11-02T15:42:32.253-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:32.290-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:32.303-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:32.337-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:32.348-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:32.502-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:32.517-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:32.551-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:32.564-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:32.576-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:32.682-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:32.716-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:32.725-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:32.758-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:32.769-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:32.881-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:32.893-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:32.903-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:32.934-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:32.944-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:33.048-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:33.059-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:33.117-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:33.150-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:33.183-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.004 s -- in POST /api/medicoes
+[INFO] Running GET /api/medicoes/alertas
+2026-11-02T15:42:33.221-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.MedicaoApiIT$Alertas]: Alertas does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:33.230-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.MedicaoApiIT$Alertas
+2026-11-02T15:42:33.273-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:33.288-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:33.320-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:33.334-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:33.367-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:33.477-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:33.490-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:33.515-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:33.525-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:33.536-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.420 s -- in GET /api/medicoes/alertas
+[INFO] Running GET /api/medicoes
+2026-11-02T15:42:33.642-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.MedicaoApiIT$Listar]: Listar does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:33.652-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.MedicaoApiIT$Listar
+2026-11-02T15:42:33.690-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:33.703-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:33.728-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:33.738-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:33.764-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:33.880-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:33.907-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:33.918-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:33.941-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:33.953-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:34.064-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:34.095-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:34.106-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:34.117-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:34.151-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 s -- in GET /api/medicoes
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.048 s -- in API /api/medicoes
+[INFO] Running APIs de plataforma (Actuator, OpenAPI e pagina inicial)
+2026-11-02T15:42:34.255-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.PlataformaApiIT]: PlataformaApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:34.263-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.PlataformaApiIT
+2026-11-02T15:42:34.284-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:34.316-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:34.326-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:34.363-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:34.372-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:34.809-03:00  INFO 6156 --- [gaiaops-esg] [o-auto-1-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 386 ms
+2026-11-02T15:42:34.940-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:34.953-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:34.987-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:34.997-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:35.030-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:35.149-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:35.162-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:35.195-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:35.205-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:35.239-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:35.350-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:35.360-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:35.394-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:35.406-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:35.439-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:35.523-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:35.558-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:35.592-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:35.604-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:35.617-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:35.719-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:35.730-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:35.764-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:35.775-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:35.811-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.998 s -- in APIs de plataforma (Actuator, OpenAPI e pagina inicial)
+[INFO] Running API /api/programas-sociais
+2026-11-02T15:42:36.254-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.ProgramaSocialApiIT]: ProgramaSocialApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:36.264-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.ProgramaSocialApiIT
+2026-11-02T15:42:36.324-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:36.337-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:36.371-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:36.381-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:36.415-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:36.506-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:36.518-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:36.550-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:36.560-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:36.594-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:36.723-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:36.736-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:36.769-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:36.781-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:36.812-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:36.928-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:36.955-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:36.967-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:37.022-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:37.031-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.852 s -- in API /api/programas-sociais
+[INFO] Running API /api/residuos
+2026-11-02T15:42:37.108-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.api.ResiduoApiIT]: ResiduoApiIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:37.117-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.api.ResiduoApiIT
+2026-11-02T15:42:37.139-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:37.173-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:37.234-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:37.244-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:37.277-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:37.366-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:37.376-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:37.410-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:37.421-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:37.454-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+2026-11-02T15:42:37.550-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:37.576-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:37.587-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:37.611-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:37.621-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 s -- in API /api/residuos
+[INFO] Running br.com.fiap.gaiaops.bdd.CucumberIT
+2026-11-02T15:42:38.288-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:38.306-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @positivo
+Cenário: Cadastrar uma nova escola municipal                            # classpath:features/01_governanca_cadastro_equipamentos.feature:12
+2026-11-02T15:42:38.430-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:38.459-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:38.467-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:38.500-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:38.511-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor cadastra o equipamento:                             # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorCadastraOEquipamento(java.util.Map)
+      | codigo             | EQP-ESC-002            |
+      | nome               | EMEF Jardim das Flores |
+      | tipo               | escola                 |
+      | distrito           | Morro Alto             |
+      | populacao_atendida | 640                    |
+  ? Então a API responde com o status 201                               # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "equipamento"                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E o equipamento "EQP-ESC-002" pode ser consultado e está ativo      # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oEquipamentoPodeSerConsultadoEEstaAtivo(java.lang.String)
+  ? E o painel ESG conta 13 equipamentos ativos de 13                   # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oPainelContaEquipamentosAtivos(int,int)
+2026-11-02T15:42:38.783-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:38.791-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @negativo
+Esquema do Cenário: Recusar cadastro que fere as regras de integridade (código fora do padrão)     # classpath:features/01_governanca_cadastro_equipamentos.feature:34
+2026-11-02T15:42:38.836-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:38.849-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:38.882-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:38.893-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:38.926-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                            # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor cadastra o equipamento com código "escola-2", nome "EMEF Nova" e tipo "escola" # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorCadastraOEquipamentoCom(java.lang.String,java.lang.String,java.lang.String)
+  ? Então a API responde com o status 400                                                          # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema-validacao"                                             # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a resposta aponta erro no campo "codigo"                                                     # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaApontaErroNoCampo(java.lang.String)
+  ? E o painel ESG conta 12 equipamentos ativos de 12                                              # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oPainelContaEquipamentosAtivos(int,int)
+2026-11-02T15:42:39.049-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:39.057-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @negativo
+Esquema do Cenário: Recusar cadastro que fere as regras de integridade (tipo inexistente)              # classpath:features/01_governanca_cadastro_equipamentos.feature:35
+2026-11-02T15:42:39.100-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:39.111-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:39.144-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:39.155-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:39.187-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                                # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor cadastra o equipamento com código "EQP-SHP-001", nome "Shopping" e tipo "shopping" # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorCadastraOEquipamentoCom(java.lang.String,java.lang.String,java.lang.String)
+  ? Então a API responde com o status 400                                                              # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema-validacao"                                                 # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a resposta aponta erro no campo "tipo"                                                           # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaApontaErroNoCampo(java.lang.String)
+  ? E o painel ESG conta 12 equipamentos ativos de 12                                                  # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oPainelContaEquipamentosAtivos(int,int)
+2026-11-02T15:42:39.302-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:39.308-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @negativo
+Esquema do Cenário: Recusar cadastro que fere as regras de integridade (nome curto demais)     # classpath:features/01_governanca_cadastro_equipamentos.feature:36
+2026-11-02T15:42:39.350-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:39.366-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:39.400-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:39.410-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:39.443-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                        # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor cadastra o equipamento com código "EQP-ESC-003", nome "AB" e tipo "escola" # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorCadastraOEquipamentoCom(java.lang.String,java.lang.String,java.lang.String)
+  ? Então a API responde com o status 400                                                      # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema-validacao"                                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a resposta aponta erro no campo "nome"                                                   # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaApontaErroNoCampo(java.lang.String)
+  ? E o painel ESG conta 12 equipamentos ativos de 12                                          # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oPainelContaEquipamentosAtivos(int,int)
+2026-11-02T15:42:39.559-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:39.569-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @negativo
+Cenário: Impedir dois equipamentos com o mesmo código                                                    # classpath:features/01_governanca_cadastro_equipamentos.feature:39
+2026-11-02T15:42:39.611-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:39.621-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:39.654-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:39.664-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:39.672-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                                  # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor cadastra o equipamento com código "EQP-ESC-001", nome "Outra escola" e tipo "escola" # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorCadastraOEquipamentoCom(java.lang.String,java.lang.String,java.lang.String)
+  ? Então a API responde com o status 409                                                                # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema"                                                             # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a mensagem de erro contém "EQP-ESC-001"                                                            # br.com.fiap.gaiaops.bdd.RespostaSteps.aMensagemDeErroContem(java.lang.String)
+2026-11-02T15:42:39.766-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:39.772-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @equipamentos @positivo @rastreabilidade
+Cenário: Desativar um equipamento preserva o histórico                  # classpath:features/01_governanca_cadastro_equipamentos.feature:46
+2026-11-02T15:42:39.810-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:39.846-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:39.855-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:39.887-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:39.947-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o gestor desativa o equipamento "EQP-ILU-001"                # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oGestorDesativaOEquipamento(java.lang.String)
+  ? Então a API responde com o status 204                               # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E o equipamento "EQP-ILU-001" continua registrado, porém inativo    # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oEquipamentoContinuaRegistradoPoremInativo(java.lang.String)
+  ? E o painel ESG conta 11 equipamentos ativos de 12                   # br.com.fiap.gaiaops.bdd.EquipamentoSteps.oPainelContaEquipamentosAtivos(int,int)
+2026-11-02T15:42:40.100-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:40.108-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @positivo
+Esquema do Cenário: Classificar o alerta de qualidade do ar pelo IQAr (ar ruim)                    # classpath:features/02_ambiental_alertas_sensores.feature:20
+2026-11-02T15:42:40.127-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:40.162-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:40.173-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:40.197-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:40.208-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                            # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o sensor do equipamento "EQP-PRA-002" envia uma leitura de qualidade do ar com IQAr 151 # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeituraDeQualidadeDoAr(java.lang.String,int)
+  ? Então a API responde com o status 201                                                          # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "medicao"                                                        # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a leitura gera um alerta de nível "critico"                                                  # br.com.fiap.gaiaops.bdd.MedicaoSteps.aLeituraGeraUmAlertaDeNivel(java.lang.String)
+2026-11-02T15:42:40.293-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:40.301-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @positivo
+Esquema do Cenário: Classificar o alerta de qualidade do ar pelo IQAr (ar moderado)               # classpath:features/02_ambiental_alertas_sensores.feature:21
+2026-11-02T15:42:40.318-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:40.331-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:40.355-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:40.365-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:40.376-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                           # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o sensor do equipamento "EQP-PRA-002" envia uma leitura de qualidade do ar com IQAr 95 # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeituraDeQualidadeDoAr(java.lang.String,int)
+  ? Então a API responde com o status 201                                                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "medicao"                                                       # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a leitura gera um alerta de nível "medio"                                                   # br.com.fiap.gaiaops.bdd.MedicaoSteps.aLeituraGeraUmAlertaDeNivel(java.lang.String)
+2026-11-02T15:42:40.477-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:40.486-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @positivo
+Cenário: Leitura dentro dos limites é registrada sem alerta                                       # classpath:features/02_ambiental_alertas_sensores.feature:24
+2026-11-02T15:42:40.505-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:40.530-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:40.555-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:40.566-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:40.594-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                           # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o sensor do equipamento "EQP-PRA-002" envia uma leitura de qualidade do ar com IQAr 60 # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeituraDeQualidadeDoAr(java.lang.String,int)
+  ? Então a API responde com o status 201                                                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "medicao"                                                       # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a leitura é registrada sem alerta                                                           # br.com.fiap.gaiaops.bdd.MedicaoSteps.aLeituraERegistradaSemAlerta()
+2026-11-02T15:42:40.715-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:40.724-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @positivo
+Cenário: Córrego acima da cota de alerta dispara alerta crítico e entra no painel       # classpath:features/02_ambiental_alertas_sensores.feature:31
+2026-11-02T15:42:40.763-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:40.775-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:40.807-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:40.815-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:40.849-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                 # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o sensor do equipamento "EQP-PRA-001" envia uma leitura de "hidrologia" com: # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeitura(java.lang.String,java.lang.String,java.util.List)
+      | bloco      | campo            | valor |
+      | leitura    | nivel_cm         | 251   |
+      | referencia | nivel_atencao_cm | 180   |
+      | referencia | nivel_alerta_cm  | 240   |
+  ? Então a API responde com o status 201                                               # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a leitura gera um alerta de nível "critico"                                       # br.com.fiap.gaiaops.bdd.MedicaoSteps.aLeituraGeraUmAlertaDeNivel(java.lang.String)
+  ? E o alerta aparece entre os alertas abertos de nível "critico"                      # br.com.fiap.gaiaops.bdd.MedicaoSteps.oAlertaApareceEntreOsAlertasAbertos(java.lang.String)
+  ? E o painel ESG passa a ter 7 alertas abertos                                        # br.com.fiap.gaiaops.bdd.MedicaoSteps.oPainelPassaATerAlertasAbertos(int)
+2026-11-02T15:42:41.024-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:41.032-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @negativo
+Cenário: Equipamento desativado não recebe leituras                                # classpath:features/02_ambiental_alertas_sensores.feature:43
+2026-11-02T15:42:41.072-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:41.086-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:41.118-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:41.127-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:41.138-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos            # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Dado que o equipamento "EQP-TER-001" foi desativado                            # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queOEquipamentoFoiDesativado(java.lang.String)
+  ? Quando o sensor do equipamento "EQP-TER-001" envia uma leitura de "ruido" com: # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeitura(java.lang.String,java.lang.String,java.util.List)
+      | bloco   | campo   | valor |
+      | leitura | laeq_db | 60    |
+  ? Então a API responde com o status 422                                          # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema"                                       # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a mensagem de erro contém "desativado"                                       # br.com.fiap.gaiaops.bdd.RespostaSteps.aMensagemDeErroContem(java.lang.String)
+2026-11-02T15:42:41.246-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:41.253-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @medicoes @negativo
+Cenário: Leitura de sensor de equipamento inexistente é recusada                                  # classpath:features/02_ambiental_alertas_sensores.feature:53
+2026-11-02T15:42:41.320-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:41.331-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:41.362-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:41.371-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:41.404-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a base ESG do município está carregada com 12 equipamentos                           # br.com.fiap.gaiaops.bdd.EquipamentoSteps.queABaseEstaCarregadaCom(int)
+  ? Quando o sensor do equipamento "EQP-XYZ-999" envia uma leitura de qualidade do ar com IQAr 80 # br.com.fiap.gaiaops.bdd.MedicaoSteps.oSensorEnviaLeituraDeQualidadeDoAr(java.lang.String,int)
+  ? Então a API responde com o status 404                                                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema"                                                      # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E o painel ESG passa a ter 6 alertas abertos                                                  # br.com.fiap.gaiaops.bdd.MedicaoSteps.oPainelPassaATerAlertasAbertos(int)
+2026-11-02T15:42:41.515-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:41.524-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @residuos @positivo
+Cenário: Painel ESG calcula a taxa de desvio de aterro # classpath:features/03_ambiental_gestao_residuos.feature:9
+2026-11-02T15:42:41.565-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:41.577-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:41.587-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:41.618-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:41.628-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto o painel ESG do município          # br.com.fiap.gaiaops.bdd.ResiduoSteps.consultoOPainelEsg()
+  ? Então a API responde com o status 200              # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "painel-esg"         # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E o total de resíduos coletados é de 83702 kg      # br.com.fiap.gaiaops.bdd.ResiduoSteps.oTotalDeResiduosColetados(int)
+  ? E a taxa de desvio de aterro é de 49,0%            # br.com.fiap.gaiaops.bdd.ResiduoSteps.aTaxaDeDesvioDeAterro(double)
+2026-11-02T15:42:41.728-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:41.738-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @residuos @positivo
+Cenário: Resumo por categoria mostra para onde vai cada resíduo             # classpath:features/03_ambiental_gestao_residuos.feature:17
+2026-11-02T15:42:41.755-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:41.789-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:41.798-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:41.830-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:41.840-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto o resumo de resíduos por categoria                      # br.com.fiap.gaiaops.bdd.ResiduoSteps.consultoOResumoDeResiduos()
+  ? Então a API responde com o status 200                                   # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "residuos-resumo"                         # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a categoria "rejeito" com destinação "aterro_sanitario" soma 42200 kg # br.com.fiap.gaiaops.bdd.ResiduoSteps.aCategoriaComDestinacaoSoma(java.lang.String,java.lang.String,int)
+  ? E a categoria "organico" com destinação "compostagem" soma 6712 kg      # br.com.fiap.gaiaops.bdd.ResiduoSteps.aCategoriaComDestinacaoSoma(java.lang.String,java.lang.String,int)
+2026-11-02T15:42:41.936-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:41.944-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@ambiental @residuos @negativo
+Cenário: Consulta de categoria sem coletas não inventa dados # classpath:features/03_ambiental_gestao_residuos.feature:25
+2026-11-02T15:42:41.977-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.011-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.021-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.054-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.065-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto as coletas da categoria "radioativo"     # br.com.fiap.gaiaops.bdd.ResiduoSteps.consultoAsColetasDaCategoria(java.lang.String)
+  ? Então a API responde com o status 200                    # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "residuos"                 # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E nenhuma coleta é retornada                             # br.com.fiap.gaiaops.bdd.ResiduoSteps.nenhumaColetaERetornada()
+2026-11-02T15:42:42.124-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:42.131-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@social @programas @positivo @inclusao
+Cenário: Programa de qualificação garante recurso de acessibilidade a beneficiário com deficiência # classpath:features/04_social_inclusao_programas.feature:9
+2026-11-02T15:42:42.147-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.180-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.190-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.201-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.232-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto o programa social "PRG-TR-001"                                                 # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.consultoOProgramaSocial(java.lang.String)
+  ? Então a API responde com o status 200                                                          # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "programa-social"                                                # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E o programa atende um beneficiário com deficiência com o recurso "interprete de libras"       # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.oProgramaAtendeBeneficiarioComDeficiencia(java.lang.String)
+2026-11-02T15:42:42.315-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:42.323-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@social @programas @positivo @lgpd
+Cenário: Nenhum programa expõe dados pessoais dos beneficiários            # classpath:features/04_social_inclusao_programas.feature:16
+2026-11-02T15:42:42.342-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.374-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.385-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.418-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.429-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto todos os programas sociais                             # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.consultoTodosOsProgramasSociais()
+  ? Então a API responde com o status 200                                  # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "programas-sociais"                      # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E nenhum beneficiário expõe os campos "nome, cpf, rg, email, telefone" # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.nenhumBeneficiarioExpoeOsCampos(java.lang.String)
+  ? E todo beneficiário é identificado apenas por protocolo                # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.todoBeneficiarioEIdentificadoPorProtocolo()
+2026-11-02T15:42:42.533-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:42.543-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@social @programas @positivo
+Cenário: Painel social consolida beneficiários e execução orçamentária # classpath:features/04_social_inclusao_programas.feature:24
+2026-11-02T15:42:42.564-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.575-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.598-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.608-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.618-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto o painel ESG do município                          # br.com.fiap.gaiaops.bdd.ResiduoSteps.consultoOPainelEsg()
+  ? Então o painel social soma 25 beneficiários em 11 programas ativos # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.oPainelSocialSoma(int,int)
+  ? E a execução orçamentária dos programas é de 58,5%                 # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.aExecucaoOrcamentariaE(double)
+2026-11-02T15:42:42.727-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:42.735-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@social @programas @negativo
+Cenário: Consulta de programa inexistente          # classpath:features/04_social_inclusao_programas.feature:30
+2026-11-02T15:42:42.753-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.778-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.789-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.811-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.821-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto o programa social "PRG-XX-999" # br.com.fiap.gaiaops.bdd.ProgramaSocialSteps.consultoOProgramaSocial(java.lang.String)
+  ? Então a API responde com o status 404          # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "problema"       # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a mensagem de erro contém "PRG-XX-999"       # br.com.fiap.gaiaops.bdd.RespostaSteps.aMensagemDeErroContem(java.lang.String)
+2026-11-02T15:42:42.879-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:42.886-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @conformidade @positivo
+Cenário: Licença vencida é sinalizada mesmo com a situação desatualizada no cadastro # classpath:features/05_governanca_conformidade.feature:9
+2026-11-02T15:42:42.903-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:42.928-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:42.939-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:42.951-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:42.977-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a data de referência é 01/10/2026                                       # br.com.fiap.gaiaops.bdd.ConformidadeSteps.queADataDeReferenciaE(java.lang.String)
+  ? Quando consulto as licenças que vencem nos próximos 180 dias                     # br.com.fiap.gaiaops.bdd.ConformidadeSteps.consultoAsLicencasQueVencem(int)
+  ? Então a API responde com o status 200                                            # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "licencas-vencimento"                              # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a licença "LP-11.204/2025" aparece como vencida há 16 dias                     # br.com.fiap.gaiaops.bdd.ConformidadeSteps.aLicencaApareceComoVencida(java.lang.String,int)
+  ? E a licença "LO-45.678/2023" não aparece na lista                                # br.com.fiap.gaiaops.bdd.ConformidadeSteps.aLicencaNaoApareceNaLista(java.lang.String)
+2026-11-02T15:42:43.042-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:43.051-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @conformidade @positivo
+Cenário: Licença de operação entra no radar de renovação perto do vencimento # classpath:features/05_governanca_conformidade.feature:18
+2026-11-02T15:42:43.082-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:43.093-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:43.124-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:43.134-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:43.145-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a data de referência é 01/09/2027                               # br.com.fiap.gaiaops.bdd.ConformidadeSteps.queADataDeReferenciaE(java.lang.String)
+  ? Quando consulto as licenças que vencem nos próximos 180 dias             # br.com.fiap.gaiaops.bdd.ConformidadeSteps.consultoAsLicencasQueVencem(int)
+  ? Então a API responde com o status 200                                    # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a licença "LO-45.678/2023" aparece a vencer em 90 dias                 # br.com.fiap.gaiaops.bdd.ConformidadeSteps.aLicencaApareceAVencer(java.lang.String,int)
+2026-11-02T15:42:43.212-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:43.221-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @conformidade @positivo @rastreabilidade
+Cenário: Versão implantada é rastreável                                 # classpath:features/05_governanca_conformidade.feature:25
+2026-11-02T15:42:43.239-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:43.273-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:43.282-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:43.321-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:43.332-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Quando consulto as informações da versão implantada                 # br.com.fiap.gaiaops.bdd.ConformidadeSteps.consultoAsInformacoesDaVersao()
+  ? Então a API responde com o status 200                               # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a resposta segue o contrato "info"                                # br.com.fiap.gaiaops.bdd.RespostaSteps.aRespostaSegueOContrato(java.lang.String)
+  ? E a resposta identifica a aplicação "GaiaOps ESG" na versão "1.0.0" # br.com.fiap.gaiaops.bdd.ConformidadeSteps.aRespostaIdentificaAAplicacao(java.lang.String,java.lang.String)
+2026-11-02T15:42:43.421-03:00  INFO 6156 --- [gaiaops-esg] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber]: ConfiguracaoCucumber does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-02T15:42:43.429-03:00  INFO 6156 --- [gaiaops-esg] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.fiap.gaiaops.GaiaOpsApplication for test class br.com.fiap.gaiaops.bdd.ConfiguracaoCucumber
+
+@governanca @conformidade @negativo
+Cenário: Prazo negativo não esconde licenças já vencidas         # classpath:features/05_governanca_conformidade.feature:32
+2026-11-02T15:42:43.447-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'equipamentos' populada com 12 documentos
+2026-11-02T15:42:43.458-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'medicoes' populada com 53 documentos
+2026-11-02T15:42:43.492-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'residuos' populada com 12 documentos
+2026-11-02T15:42:43.523-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'programas_sociais' populada com 11 documentos
+2026-11-02T15:42:43.534-03:00  INFO 6156 --- [gaiaops-esg] [           main] br.com.fiap.gaiaops.carga.CargaInicial   : Carga inicial: 'conformidade' populada com 12 documentos
+  ? Dado que a data de referência é 01/10/2026                   # br.com.fiap.gaiaops.bdd.ConformidadeSteps.queADataDeReferenciaE(java.lang.String)
+  ? Quando consulto as licenças que vencem nos próximos -30 dias # br.com.fiap.gaiaops.bdd.ConformidadeSteps.consultoAsLicencasQueVencem(int)
+  ? Então a API responde com o status 200                        # br.com.fiap.gaiaops.bdd.RespostaSteps.aApiRespondeComOStatus(int)
+  ? E a licença "LP-11.204/2025" aparece como vencida há 16 dias # br.com.fiap.gaiaops.bdd.ConformidadeSteps.aLicencaApareceComoVencida(java.lang.String,int)
+2026-11-02T15:42:43.687-03:00  WARN 6156 --- [gaiaops-esg] [           main] o.j.p.l.core.DiscoveryIssueNotifier      : TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.006 s -- in br.com.fiap.gaiaops.bdd.CucumberIT
+2026-11-02T15:42:43.688-03:00  WARN 6156 --- [gaiaops-esg] [           main] o.j.p.l.core.DiscoveryIssueNotifier      : TestEngine with ID 'junit-platform-suite' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] [cucumber] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead (via @Suite br.com.fiap.gaiaops.bdd.CucumberIT).
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.5.6:verify (default) @ gaiaops-esg ---
+[INFO] 
+[INFO] --- jacoco:0.8.15:report (report) @ gaiaops-esg ---
+[INFO] Loading execution data file C:\FIAP\Testes\gaiaops-esg-testes\target\jacoco.exec
+[INFO] Analyzed bundle 'gaiaops-esg' with 29 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  51.067 s
+[INFO] Finished at: 2026-11-02T15:42:44-03:00
+[INFO] ------------------------------------------------------------------------

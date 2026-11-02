@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Painel ESG do municipio",
+  "description": "Contrato fechado (additionalProperties false): consumidores dependem exatamente destes campos.",
+  "type": "object",
+  "required": [
+    "gerado_em",
+    "ambiental",
+    "social",
+    "governanca"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "gerado_em": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T"
+    },
+    "ambiental": {
+      "type": "object",
+      "required": [
+        "medicoes",
+        "alertas_abertos",
+        "alertas_abertos_por_nivel",
+        "residuos_coletados_kg",
+        "taxa_desvio_de_aterro_pct"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "medicoes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "alertas_abertos": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "alertas_abertos_por_nivel": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "critico": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "alto": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "medio": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "residuos_coletados_kg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "taxa_desvio_de_aterro_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "social": {
+      "type": "object",
+      "required": [
+        "programas_ativos",
+        "beneficiarios_acompanhados",
+        "orcamento_previsto_brl",
+        "orcamento_executado_brl",
+        "execucao_orcamentaria_pct"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "programas_ativos": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "beneficiarios_acompanhados": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "orcamento_previsto_brl": {
+          "type": "number",
+          "minimum": 0
+        },
+        "orcamento_executado_brl": {
+          "type": "number",
+          "minimum": 0
+        },
+        "execucao_orcamentaria_pct": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "governanca": {
+      "type": "object",
+      "required": [
+        "equipamentos_ativos",
+        "equipamentos_total",
+        "licencas_vencidas",
+        "licencas_por_vencer",
+        "manifestacoes_ouvidoria",
+        "termos_ajustamento"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "equipamentos_ativos": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "equipamentos_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "licencas_vencidas": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "licencas_por_vencer": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "manifestacoes_ouvidoria": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "termos_ajustamento": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

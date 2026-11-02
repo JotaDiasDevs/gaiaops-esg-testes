@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Erro de validacao: Problem Details + mapa campo -> mensagem",
+  "allOf": [
+    {
+      "$ref": "problema.json"
+    },
+    {
+      "type": "object",
+      "required": [
+        "erros"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            400
+          ]
+        },
+        "erros": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

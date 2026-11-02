@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Registro de governanca municipal",
+  "type": "object",
+  "required": [
+    "_id",
+    "tipo",
+    "assunto",
+    "descricao"
+  ],
+  "properties": {
+    "_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{24}$"
+    },
+    "tipo": {
+      "enum": [
+        "licenca",
+        "audiencia_publica",
+        "conselho",
+        "ouvidoria",
+        "termo_ajustamento"
+      ]
+    },
+    "assunto": {
+      "type": "string",
+      "minLength": 3
+    },
+    "descricao": {
+      "type": "string",
+      "minLength": 3
+    }
+  }
+}

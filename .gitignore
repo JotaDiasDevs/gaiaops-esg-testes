@@ -1,0 +1,25 @@
+# Build
+target/
+*.class
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Variaveis de ambiente e segredos (NUNCA versionar)
+.env
+
+# Relatorios de teste ficam em target/ (e nos artefatos do GitHub Actions);
+# as evidencias da entrega ficam versionadas em docs/evidencias e docs/prints.
+
+# Saidas das ferramentas de documentacao
+tools/__pycache__/
+entrega/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

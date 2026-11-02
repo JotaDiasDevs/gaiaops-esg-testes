@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Saude da aplicacao (Actuator)",
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "OUT_OF_SERVICE",
+        "UNKNOWN"
+      ]
+    },
+    "components": {
+      "type": "object"
+    }
+  }
+}
