@@ -396,6 +396,12 @@ def secao_desafios(d):
          "Data do cenário lida como texto e convertida com DateTimeFormatter (dd/MM/yyyy)"],
         ["REST Assured lê decimais do JSON como Float, e 83702.0 não \"batia\" com o Double esperado",
          "Configuração global do REST Assured para ler decimais como Double"],
+        ["Primeira execução no GitHub Actions falhou: o runner ubuntu-latest passou a ser Ubuntu 26 (19/10/2026), "
+         "cujo kernel 6.19+ é incompatível com o MongoDB 8.x (bug do TCMalloc, SERVER-121912); o erro real ainda "
+         "aparecia mascarado como \"MongoDBContainer should be started first\"",
+         "Causa encontrada no log do mongod dentro dos relatórios do pipeline. Runner fixado em ubuntu-24.04, mantendo "
+         "o mesmo MongoDB 8.0 de produção, e MongoDeTeste corrigido para guardar o container só depois de iniciado, "
+         "expondo o erro original"],
         ["Estação de desenvolvimento sem Docker",
          "Modo duplo: Testcontainers no pipeline e MongoDB local via TEST_MONGODB_URI, com trava que exige um banco descartável"],
         ["Resultados que dependem da data de execução (licenças vencidas)",

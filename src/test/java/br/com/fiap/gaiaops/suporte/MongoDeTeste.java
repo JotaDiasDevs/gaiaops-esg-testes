@@ -30,8 +30,12 @@ public final class MongoDeTeste {
             return externa;
         }
         if (container == null) {
-            container = new MongoDBContainer("mongo:8.0");
-            container.start();
+            // So guarda a referencia depois de subir: se o start falhar, a proxima
+            // chamada tenta de novo e o erro original aparece no log (em vez de um
+            // "container should be started first" que esconde a causa).
+            MongoDBContainer novo = new MongoDBContainer("mongo:8.0");
+            novo.start();
+            container = novo;
         }
         return container.getReplicaSetUrl("gaiaops_testes");
     }

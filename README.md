@@ -190,6 +190,8 @@ O workflow [`.github/workflows/testes.yml`](.github/workflows/testes.yml) roda e
 | Artefatos | `relatorio-cucumber` (HTML) e `relatorios-junit-e-cobertura` |
 | Build da imagem Docker | Confirma que o `Dockerfile` continua funcional |
 
+> Os jobs rodam em `ubuntu-24.04`, e não em `ubuntu-latest`. Desde 19/10/2026 o `ubuntu-latest` é o Ubuntu 26, cujo kernel (6.19+) é incompatível com o MongoDB 8.x ([SERVER-121912](https://jira.mongodb.org/browse/SERVER-121912)): o `mongod` se recusa a iniciar. Fixar o runner mantém os testes no mesmo MongoDB 8.0 usado pela aplicação.
+
 ---
 
 ## Executar a aplicação (opcional)
